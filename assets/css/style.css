@@ -1454,7 +1454,7 @@ section {
   height: 100%;
   background: #fff;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .contact .info i {
@@ -1472,23 +1472,17 @@ section {
 }
 
 .contact .info h4 {
-  padding: 0 0 0 60px;
+  padding: 9px 0 0 60px;
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 5px;
   color: #151515;
 }
 
 .contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
+  line-height: 30px;
   font-size: 14px;
   color: #484848;
-}
-
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
 }
 
 .contact .info .email:hover i,
@@ -1497,8 +1491,14 @@ section {
   background: #7cc576;
   color: #fff;
 }
-
-.contact .php-email-form {
+.con-link {
+  text-decoration: none;
+  color: #484848;
+}
+.con-link:hover {
+  color: #7cc576;
+}
+/* .contact .php-email-form {
   width: 100%;
   background: #fff;
   padding: 20px;
@@ -1564,18 +1564,18 @@ section {
 
 .contact .php-email-form textarea {
   padding: 10px 12px;
-}
+} */
 
-.contact .php-email-form button[type="submit"] {
+#enquire-btn {
   background: #7cc576;
   border: 0;
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+#enquire-btn:hover {
   background: #61b959;
 }
 
@@ -1772,4 +1772,21 @@ section {
   text-align: center;
   font-size: 13px;
   padding-top: 5px;
+}
+
+/*--------------------------------------------------------------
+# Map
+--------------------------------------------------------------*/
+.mapouter {
+  position: relative;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 150px;
+  width: 150px;
 }
