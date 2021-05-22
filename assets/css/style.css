@@ -1460,7 +1460,6 @@ section {
 .contact .info i {
   font-size: 20px;
   color: #7cc576;
-  float: left;
   width: 44px;
   height: 44px;
   background: #eaf6e9;
@@ -1496,9 +1495,9 @@ section {
   color: #484848;
 }
 .con-link:hover {
-  color: #7cc576;
+  color: #7cc576 !important;
 }
-/* .contact .php-email-form {
+.contact .php-email-form {
   width: 100%;
   background: #fff;
   padding: 20px;
@@ -1564,19 +1563,27 @@ section {
 
 .contact .php-email-form textarea {
   padding: 10px 12px;
-} */
+}
 
-#enquire-btn {
+.sub-btn {
   background: #7cc576;
   border: 0;
-  padding: 10px 24px;
+  padding: 10px !important;
   color: #fff;
   transition: 0.4s;
   border-radius: 10px;
 }
 
-#enquire-btn:hover {
+.sub-btn:hover {
   background: #61b959;
+}
+
+#elink {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+.contact-symbols {
+  padding-left: 15%;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1594,6 +1601,12 @@ section {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-symbols {
+    padding: 0;
   }
 }
 
@@ -1780,13 +1793,38 @@ section {
 .mapouter {
   position: relative;
   text-align: center;
-  height: 150px;
-  width: 150px;
+  height: 300px;
+  width: 350px;
 }
 
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  height: 150px;
-  width: 150px;
+  height: 300px;
+  width: 350px;
+  padding: 5px 20px;
+  /* padding: 5px 15px; */
+}
+@media (max-width: 768px) {
+  .mapouter {
+    height: 200px;
+    width: 250px;
+  }
+
+  .gmap_canvas {
+    height: 200px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  mapouter {
+    height: 250px;
+    width: 250px;
+  }
+
+  .gmap_canvas {
+    height: 250px;
+    width: 250px;
+  }
 }
