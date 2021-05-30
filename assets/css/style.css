@@ -472,7 +472,7 @@ section {
 }
 
 .section-bg {
-  background-color: whitesmoke;
+  background-color: rgb(41, 114, 156);;
 }
 
 .section-title {
@@ -531,30 +531,12 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 5px 0 10px 60px;
+
+
+.services{
+  background-color: black;
 }
 
-.services .icon-box i {
-  font-size: 48px;
-  float: left;
-  color: #7cc576;
-}
-
-.services .icon-box p {
-  font-size: 15px;
-  color: #959595;
-  margin-left: 60px;
-}
-
-.services .image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 400px;
-}
 
 /*--------------------------------------------------------------
 # Featured
@@ -1835,4 +1817,168 @@ section {
     height: 250px;
     width: 250px;
   }
+}
+/*--------------------------------------------------------------
+# products
+--------------------------------------------------------------*/
+/* Global */
+:root {
+  --white-color: #ffffff;
+  
+  --dark-font-color: #333333;
+  --light-font-color: #ffffff;
+  --dark-pink-color: #3361e0;
+  --light-pink-color: #FFBABA;
+  --dark-violet-color: #1f80c0;
+  --light-violet-color: #D4BDFC;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: var(--bg-color);
+}
+
+/* Cards */
+.card-snippet {
+  width: 80%;
+/*   max-width: 680px; */
+  margin: 3% auto;
+  padding: 30px 0;
+}
+
+.card-box {
+  display: inline-block;
+  position: relative;
+  width: 33%;
+  padding: 28px 6%;
+  background: var(--white-color);
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.4);
+  box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.4);
+}
+
+.card-box:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+@media screen and (max-width: 680px) {
+  .card-box {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 8px !important;
+  }
+}
+
+/* Card content */
+.card-box img {
+  width: 300px;
+  align-items: center;
+
+}
+
+.card-box h10 {
+  margin: .2em 0;
+  font-size: 2.1em;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: var(--light-font-color);
+}
+
+.card-box h11 {
+  position: relative;
+  margin: .2em 0 2em 0;
+  font-size: .8em;
+  text-transform: uppercase;
+  color: var(--light-pink-color);
+}
+
+.card-box h10:after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: var(--light-pink-color);
+  bottom: -10px;
+  left: 50%;
+  margin-left: -14px;
+}
+
+.secondary h3 {
+  color: var(--light-violet-color);
+}
+
+.secondary h3:after {
+  background: var(--light-violet-color);
+}
+
+p {
+  font-size: .96em;
+  color: var(--dark-font-color);;
+}
+
+/* Button */
+.card-box button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+
+.btn {
+  user-select: none;
+  min-width: 160px;
+  padding: 8px 26px;
+  outline: none;
+  border: none;
+  border-radius: 26px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  white-space: nowrap;
+  letter-spacing: .03em;
+  color: var(--white-color);
+  background: var(--dark-pink-color);
+  cursor: pointer;
+  box-shadow: 0 4px 16px var(--dark-pink-color);
+  transition: ease .2s;
+}
+
+.btn:hover {
+  padding: 8px 34px;
+  box-shadow: 0 5px 24px var(--dark-pink-color);
+}
+
+.btn:active {
+  font-size: 1.1em;
+}
+
+.btn:active:focus {
+  font-size: 1.1em;
+}
+
+.btn:focus {
+  padding: 8px 26px;
+}
+
+.secondary .btn {
+  background: var(--dark-violet-color);
+  box-shadow: 0 4px 16px var(--dark-violet-color);
+}
+
+.secondary .btn:hover {
+  padding: 8px 34px;
+  box-shadow: 0 5px 24px var(--dark-violet-color);
 }
