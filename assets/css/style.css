@@ -9,13 +9,13 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Montserrat";
+  font-family: "Roboto", sans-serif;
   color: #555555;
 }
 
 a {
   text-decoration: none;
-  color: #7cc576;
+  color: #0ca4cc;
 }
 
 a:hover {
@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -70,7 +70,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #7cc576;
+  background: #077fb3;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -84,7 +84,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #97d193;
+  background: #0ca4cc;
   color: rgb(25, 212, 245);
 }
 
@@ -194,7 +194,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar li:hover > a {
-  color: #7cc576;
+  color: #0ca4cc;
 }
 
 /* .navbar .dropdown ul {
@@ -230,7 +230,7 @@ h6 {
 /* .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #7cc576;
+  color: #0ca4cc;
 }
 
 .navbar .dropdown:hover > ul {
@@ -341,7 +341,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #7cc576;
+  color: #0ca4cc;
 }
 
 .navbar-mobile .getstarted {
@@ -375,7 +375,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #7cc576;
+  color: #0ca4cc;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -387,7 +387,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background: url("../img/Goldenbg.jpg");
   position: relative;
 }
@@ -428,7 +428,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
@@ -438,13 +438,13 @@ h6 {
   border-radius: 3px;
   margin: 10px;
   color: #fff;
-  background: #7cc576;
+  background: #077fb3;
 }
 
 #hero .btn-get-started:hover {
   transition: 0.5s;
   background: #fff;
-  color: #7cc576;
+  color: #077fb3;
 }
 
 @media (min-width: 1024px) {
@@ -472,7 +472,7 @@ section {
 }
 
 .section-bg {
-  background-color: rgb(41, 114, 156);;
+  background-color: rgb(41, 114, 156);
 }
 
 .section-title {
@@ -486,17 +486,21 @@ section {
   text-transform: uppercase;
   margin-bottom: 15px;
   padding-bottom: 0;
-  color: #151515;
+  color: #fff;
 }
 
 .section-title p {
   margin-bottom: 0;
-  color: #aeaeae;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
+.about {
+  background: #041f58;
+  color: #fff;
+}
 .about .image {
   padding: 20px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -521,7 +525,7 @@ section {
 .about .content ul i {
   font-size: 24px;
   padding: 2px 6px 0 0;
-  color: #7cc576;
+  color: #fff;
 }
 
 .about .content p:last-child {
@@ -532,11 +536,9 @@ section {
 # Services
 --------------------------------------------------------------*/
 
-
-.services{
-  background-color: black;
+.services {
+  background-color: #042464;
 }
-
 
 /*--------------------------------------------------------------
 # Featured
@@ -564,7 +566,7 @@ section {
 }
 
 .featured .nav-link:hover h4 {
-  color: #7cc576;
+  color: #0ca4cc;
 }
 
 .featured .nav-link p {
@@ -577,7 +579,7 @@ section {
 }
 
 .featured .nav-link.active h4 {
-  color: #7cc576;
+  color: #0ca4cc;
 }
 
 .featured .tab-pane.active {
@@ -661,7 +663,7 @@ section {
 .why-us .accordion-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -671,7 +673,7 @@ section {
 }
 
 .why-us .accordion-list span {
-  color: #7cc576;
+  color: #0ca4cc;
   font-weight: 600;
   font-size: 18px;
   padding-right: 10px;
@@ -698,7 +700,7 @@ section {
 }
 
 .why-us .accordion-list a.collapsed:hover {
-  color: #7cc576;
+  color: #0ca4cc;
 }
 
 .why-us .accordion-list a.collapsed .icon-show {
@@ -712,7 +714,7 @@ section {
 .why-us .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#7cc576 50%, rgba(124, 197, 118, 0.4) 52%);
+  background: radial-gradient(#0ca4cc 50%, rgba(124, 197, 118, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -760,7 +762,7 @@ section {
 }
 
 .why-us .play-btn:hover::after {
-  border-left: 15px solid #7cc576;
+  border-left: 15px solid #0ca4cc;
   transform: scale(20);
 }
 
@@ -852,7 +854,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #7cc576;
+  background: #0ca4cc;
   color: #fff;
 }
 
@@ -953,7 +955,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #7cc576;
+  color: #0ca4cc;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -1002,14 +1004,14 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #7cc576;
+  border: 1px solid #0ca4cc;
 }
 
 .portfolio-details
   .portfolio-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
-  background-color: #7cc576;
+  background-color: #0ca4cc;
 }
 
 .portfolio-details .portfolio-info {
@@ -1076,11 +1078,11 @@ section {
 }
 
 .testimonials .quote-icon i {
-  color: #7cc576;
+  color: #0ca4cc;
   font-size: 24px;
   padding: 18px;
   border-radius: 50px;
-  border: 2px solid #7cc576;
+  border: 2px solid #0ca4cc;
 }
 
 .testimonials .testimonial-item {
@@ -1127,7 +1129,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #7cc576;
+  background-color: #0ca4cc;
 }
 
 @media (min-width: 992px) {
@@ -1237,7 +1239,7 @@ section {
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 15px;
-  color: #7cc576;
+  color: #0ca4cc;
 }
 
 .team .member .member-info p {
@@ -1279,7 +1281,7 @@ section {
   font-size: 42px;
   color: #151515;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -1309,7 +1311,7 @@ section {
 }
 
 .pricing .box ul i {
-  color: #7cc576;
+  color: #0ca4cc;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1328,26 +1330,26 @@ section {
   display: inline-block;
   padding: 10px 40px 12px 40px;
   border-radius: 5px;
-  border: 2px solid #7cc576;
-  color: #7cc576;
+  border: 2px solid #0ca4cc;
+  color: #0ca4cc;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
 
 .pricing .box .btn-buy:hover {
-  background: #7cc576;
+  background: #0ca4cc;
   color: #fff;
 }
 
 .pricing .recommended {
-  border-color: #7cc576;
+  border-color: #0ca4cc;
 }
 
 .pricing .recommended .btn-buy {
-  background: #7cc576;
+  background: #0ca4cc;
   color: #fff;
 }
 
@@ -1365,7 +1367,7 @@ section {
   font-size: 12px;
   padding: 4px 25px 6px 25px;
   background: #eaf6e9;
-  color: #7cc576;
+  color: #0ca4cc;
   border-radius: 50px;
   text-transform: uppercase;
   font-weight: 600;
@@ -1388,7 +1390,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: #7cc576;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1417,7 +1419,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #7cc576;
+  color: #0ca4cc;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1431,6 +1433,9 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  background-color: #001a54;
+}
 .contact .info {
   width: 100%;
   height: 100%;
@@ -1441,7 +1446,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #7cc576;
+  color: #0ca4cc;
   width: 44px;
   height: 44px;
   background: #eaf6e9;
@@ -1469,7 +1474,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #7cc576;
+  background: #0ca4cc;
   color: #fff;
 }
 .con-link {
@@ -1477,7 +1482,7 @@ section {
   color: #484848;
 }
 .con-link:hover {
-  color: #7cc576 !important;
+  color: #0ca4cc !important;
 }
 .contact .php-email-form {
   width: 100%;
@@ -1548,21 +1553,22 @@ section {
 }
 
 .sub-btn {
-  background: #7cc576;
+  background: #043d7c;
   border: 0;
-  padding: 10px !important;
+  padding: 10px;
   color: #fff;
   transition: 0.4s;
   border-radius: 10px;
 }
 
 .sub-btn:hover {
-  background: #61b959;
+  background: #0ca4cc;
+  color: #fff;
 }
 
 #elink {
-  padding-top: 12px !important;
-  padding-bottom: 12px !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 .contact-symbols {
   padding-left: 15%;
@@ -1648,12 +1654,16 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/footer-bg.jpg") center center no-repeat;
+  /* background: url("../img/footer-bg.jpg") center center no-repeat; */
   color: #fff;
   font-size: 14px;
   position: relative;
 }
 
+#canvas {
+  width: 100%;
+  height: 75px !important;
+}
 #footer::before {
   content: "";
   position: absolute;
@@ -1661,11 +1671,11 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background-color: #022b46;
   z-index: 1;
 }
 
-#footer .footer-top {
+/* #footer .footer-top {
   position: relative;
   z-index: 2;
   text-align: center;
@@ -1723,7 +1733,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #7cc576;
+  background: #0ca4cc;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -1741,7 +1751,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #7cc576;
+  background: #0ca4cc;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1757,10 +1767,10 @@ section {
   background: #5ab652;
   color: #fff;
   text-decoration: none;
-}
+} */
 
 #footer .footer-bottom {
-  border-top: 1px solid #222222;
+  border-top: 1px solid #fff;
   z-index: 2;
   position: relative;
   padding-top: 40px;
@@ -1777,6 +1787,17 @@ section {
   padding-top: 5px;
 }
 
+.copyright {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+.copyright {
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+}
 /*--------------------------------------------------------------
 # Map
 --------------------------------------------------------------*/
@@ -1824,13 +1845,13 @@ section {
 /* Global */
 :root {
   --white-color: #ffffff;
-  
+
   --dark-font-color: #333333;
   --light-font-color: #ffffff;
   --dark-pink-color: #3361e0;
-  --light-pink-color: #FFBABA;
+  --light-pink-color: #ffbaba;
   --dark-violet-color: #1f80c0;
-  --light-violet-color: #D4BDFC;
+  --light-violet-color: #d4bdfc;
 }
 
 * {
@@ -1839,16 +1860,10 @@ section {
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background: var(--bg-color);
-}
-
 /* Cards */
 .card-snippet {
   width: 80%;
-/*   max-width: 680px; */
+  /*   max-width: 680px; */
   margin: 3% auto;
   padding: 30px 0;
 }
@@ -1856,15 +1871,15 @@ html, body {
 .card-box {
   display: inline-block;
   position: relative;
-  width: 33%;
+  width: 30%;
   padding: 28px 6%;
   background: var(--white-color);
   text-align: center;
   vertical-align: middle;
   border-radius: 8px;
-  -webkit-box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.4);
-  -moz-box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.4);
-  box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.4);
 }
 
 .card-box:first-child {
@@ -1880,14 +1895,16 @@ html, body {
 }
 
 /* Card content */
+.primary {
+  width: 38%;
+}
 .card-box img {
   width: 300px;
   align-items: center;
-
 }
 
-.card-box h10 {
-  margin: .2em 0;
+/* .card-box h10 {
+  margin: 0.2em 0;
   font-size: 2.1em;
   line-height: 1em;
   text-transform: uppercase;
@@ -1896,8 +1913,8 @@ html, body {
 
 .card-box h11 {
   position: relative;
-  margin: .2em 0 2em 0;
-  font-size: .8em;
+  margin: 0.2em 0 2em 0;
+  font-size: 0.8em;
   text-transform: uppercase;
   color: var(--light-pink-color);
 }
@@ -1911,7 +1928,7 @@ html, body {
   bottom: -10px;
   left: 50%;
   margin-left: -14px;
-}
+} */
 
 .secondary h3 {
   color: var(--light-violet-color);
@@ -1922,8 +1939,16 @@ html, body {
 }
 
 p {
-  font-size: .96em;
-  color: var(--dark-font-color);;
+  font-size: 0.96em;
+  color: var(--dark-font-color);
+}
+.more a {
+  color: #fff;
+}
+
+.more a:hover {
+  padding: 8px 10px;
+  color: #333333;
 }
 
 /* Button */
@@ -1944,16 +1969,16 @@ p {
   outline: none;
   border: none;
   border-radius: 26px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2em;
   line-height: 1.5em;
   white-space: nowrap;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   color: var(--white-color);
   background: var(--dark-pink-color);
   cursor: pointer;
   box-shadow: 0 4px 16px var(--dark-pink-color);
-  transition: ease .2s;
+  transition: ease 0.2s;
 }
 
 .btn:hover {
