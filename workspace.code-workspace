@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "C:\\Users\\silas\\Desktop\\product-detail-gallery-component\\dist"
+		},
+		{
+			"path": "c:\\Users\\silas\\Desktop\\product-detail-gallery-component\\tproduct2"
+		},
+		{
+			"path": "c:\\Users\\silas\\Desktop\\product-detail-gallery-component\\product1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "GOLDEN 2"
+	}
+}
