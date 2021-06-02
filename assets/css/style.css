@@ -1531,7 +1531,7 @@ section {
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
-  padding-left: 40PX;
+  padding-left: 40px;
 }
 
 .contact .php-email-form input,
@@ -1859,17 +1859,17 @@ section {
 
 /* Cards */
 .card-snippet {
-  width: 80%;
-  /*   max-width: 680px; */
-  margin: 3% auto;
-  padding: 30px 0;
+  width: 100%;
+  /* max-width: 680px; */
+  margin: auto;
+  padding: 10px 0;
 }
 
 .card-box {
   display: inline-block;
   position: relative;
   width: 30%;
-  padding: 28px 6%;
+  padding: 25px;
   background: var(--white-color);
   text-align: center;
   vertical-align: middle;
@@ -2004,8 +2004,9 @@ p {
   padding: 8px 34px;
   box-shadow: 0 5px 24px var(--dark-violet-color);
 }
-.......services
-*, *:before, *:after {
+.services *,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -2016,9 +2017,9 @@ p {
 }
 
 .background::after {
-  content: '';
+  content: "";
   background: #60a9ff;
-  background: linear-gradient(to bottom, #60a9ff 0%,#4394f4 100%);
+  background: linear-gradient(to bottom, #60a9ff 0%, #4394f4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
   height: 500px;
   left: 0;
@@ -2051,7 +2052,8 @@ p {
 }
 
 .pricing-table {
-  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08),
+    0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
   display: flex;
   flex-direction: column;
 }
@@ -2101,7 +2103,7 @@ p {
 }
 
 .pricing-features {
-  color: #016FF9;
+  color: #016ff9;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 50px 0 25px;
@@ -2119,7 +2121,7 @@ p {
 }
 
 .pricing-price {
-  color: #016FF9;
+  color: #016ff9;
   display: block;
   font-size: 32px;
   font-weight: 700;
@@ -2128,7 +2130,7 @@ p {
 .pricing-button {
   border: 1px solid #9dd1ff;
   border-radius: 10px;
-  color: #348EFE;
+  color: #348efe;
   display: inline-block;
   margin: 25px 0;
   padding: 15px 35px;
