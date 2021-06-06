@@ -1859,17 +1859,43 @@ section {
 }
 
 /* Cards */
+
 .card-snippet {
   width: 100%;
   /* max-width: 680px; */
   margin: auto;
   padding: 10px 0;
 }
+.swiper-container {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 
 .card-box {
   display: inline-block;
   position: relative;
-  width: 30%;
+  /* width: 30%; */
   padding: 25px;
   background: var(--white-color);
   text-align: center;
@@ -1880,9 +1906,9 @@ section {
   box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.4);
 }
 
-.card-box:first-child {
+/* .card-box:first-child {
   border-radius: 8px 0 0 8px;
-}
+} */
 
 @media screen and (max-width: 680px) {
   .card-box {
@@ -1893,34 +1919,10 @@ section {
 }
 
 /* Card content */
-.primary {
+/* .primary {
   width: 38%;
-}
-@keyframes rotation {
-  0%,
-  40% {
-    transform: rotate(0deg);
-  }
-  60%,
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/* .wrapper a:last-child div {
--webkit-animation: rotation 6s infinite linear;
-animation: rotation 6s infinite linear;
 } */
-.rotate {
-  animation: rotation 8s infinite linear;
-}
-/* @keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-} */
+
 .card-box img {
   width: 400px;
   align-items: center;
