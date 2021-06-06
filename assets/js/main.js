@@ -255,11 +255,11 @@
   /**
    * Animation on scroll
    */
-  window.addEventListener("load", () => {
+  window.addEventListener("scroll", () => {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
-      mirror: false,
+      // mirror: true,
     });
   });
 })();

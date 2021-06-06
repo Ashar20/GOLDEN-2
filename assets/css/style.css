@@ -1896,6 +1896,31 @@ section {
 .primary {
   width: 38%;
 }
+@keyframes rotation {
+  0%,
+  40% {
+    transform: rotate(0deg);
+  }
+  60%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* .wrapper a:last-child div {
+-webkit-animation: rotation 6s infinite linear;
+animation: rotation 6s infinite linear;
+} */
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+/* @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+} */
 .card-box img {
   width: 400px;
   align-items: center;
@@ -2159,7 +2184,6 @@ p {
 .about2 {
   background-color: #045de9;
   background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
-  
 }
 
 .about2 .content h3 {
@@ -2188,16 +2212,14 @@ p {
   margin-bottom: 0;
 }
 .bg1 {
-  animation:slide 3s ease-in-out infinite alternate;
+  animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, rgb(51, 97, 204) 50%, #09f 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
   height: 100%;
 }
-
-
