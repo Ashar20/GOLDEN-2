@@ -504,8 +504,8 @@ section {
 
 .about .content h3 {
   font-weight: 600;
-  font-size: 26px;
-  padding-right:  50px;
+  font-size: 1.25rem;
+  padding-right: 50px;
 }
 
 .about .content ul {
@@ -516,12 +516,11 @@ section {
 .about .content ul li {
   padding-bottom: 10px;
   display: flex;
- 
 }
 
 .about .content ul i {
   font-size: 24px;
- 
+
   color: #fff;
 }
 
