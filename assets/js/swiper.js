@@ -8,16 +8,20 @@ var mySwiper = new Swiper(".swiper-container", {
   direction: "horizontal",
   loop: true,
   // delay between transitions in ms
-  autoplay: 3000,
-  autoplayStopOnLast: false, // loop false also
-  // If we need pagination
-  pagination: ".swiper-pagination",
-  paginationType: "bullets",
-
-  // Navigation arrows
-  nextButton: ".swiper-button-next",
-  prevButton: ".swiper-button-prev",
-
+  autoplay: {
+    delay: 3000,
+  }, // loop false also
+  breakpoints: {
+    // when window width is >= 767px
+    768: {
+      slidesPerView: 1,
+      initialSlide: 0,
+      speed: 400,
+      autoplay: {
+        delay: 3000,
+      },
+    },
+  },
   // And if we need scrollbar
   //scrollbar: '.swiper-scrollbar',
   // "slide", "fade", "cube", "coverflow" or "flip"
