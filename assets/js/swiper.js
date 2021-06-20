@@ -1,6 +1,5 @@
 var mySwiper = new Swiper(".swiper-container", {
   speed: 400,
-  spaceBetween: 100,
   initialSlide: 0,
   //truewrapper adoptsheight of active slide
   autoHeight: false,
@@ -14,6 +13,7 @@ var mySwiper = new Swiper(".swiper-container", {
   breakpoints: {
     // when window width is >= 767px
     768: {
+      effect: "coverflow",
       slidesPerView: 1,
       initialSlide: 0,
       speed: 400,
@@ -22,18 +22,26 @@ var mySwiper = new Swiper(".swiper-container", {
       },
     },
   },
+
   // And if we need scrollbar
   //scrollbar: '.swiper-scrollbar',
   // "slide", "fade", "cube", "coverflow" or "flip"
-  effect: "slide",
-  // Distance between slides in px.
-  spaceBetween: 20,
+  effect: "coverflow",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 250,
+    modifier: 0.5,
+    slideShadows: true,
+  }, // Distance between slides in px.
+  spaceBetween: 80,
   //
   slidesPerView: 3,
   //
   centeredSlides: true,
   //
   slidesOffsetBefore: 0,
+  slidesOffsetAfter: 0,
   //
   grabCursor: true,
 });

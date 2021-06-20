@@ -2,7 +2,7 @@ var swiper = new Swiper(".blog-slider", {
   spaceBetween: 30,
   effect: "fade",
   loop: true,
-  direction: "vertical",
+  direction: "horizontal",
   autoplay: {
     delay: 3000,
   },
