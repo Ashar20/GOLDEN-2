@@ -8,8 +8,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: "Courgette-Regular";
+  src: url("../vendor/font/Courgette-Regular.ttf");
+}
+/* @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap"); */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Courgette-Regular";
   color: #555555;
 }
 
@@ -23,14 +28,14 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: "Roboto", sans-serif;
-}
+} */
 
 /*--------------------------------------------------------------
 # Loader
@@ -177,8 +182,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0px 10px 30px;
-  font-size: 1.1rem;
+  padding: 10px 0px 10px 40px;
+  font-size: 1.3rem;
   color: #151515;
   text-transform: uppercase;
   white-space: nowrap;
@@ -429,7 +434,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
@@ -508,6 +513,13 @@ section {
   padding: 3rem !important;
   border-radius: 15px;
   margin-right: 2rem;
+  animation: box 5s infinite;
+}
+
+@keyframes box {
+  50% {
+    box-shadow: 15px 20px 30px #000;
+  }
 }
 
 .about .content h3 {
@@ -680,7 +692,7 @@ section {
 .why-us .accordion-list a {
   display: block;
   position: relative;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -893,6 +905,9 @@ section {
 .portfolio-wrap img:hover {
   transition: opacity 1s linear;
   opacity: 1;
+}
+#portfolio .section-title h2 {
+  color: #333333 !important;
 }
 
 /*--------------------------------------------------------------
@@ -1196,7 +1211,7 @@ section {
   font-size: 42px;
   color: #151515;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   margin-bottom: 20px;
 }
 
@@ -1249,7 +1264,7 @@ section {
   color: #0ca4cc;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1305,7 +1320,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1913,7 +1928,7 @@ p {
   outline: none;
   border: none;
   border-radius: 26px;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 1.2em;
   line-height: 1.5em;
   white-space: nowrap;
@@ -2248,4 +2263,67 @@ p {
 
 .swiper-content-process .copy {
   padding: 20px;
+}
+
+/*--------------------------------------------------------------
+# Wave
+--------------------------------------------------------------*/
+.header-wave {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.waves {
+  position: relative;
+  width: 130vw !important;
+  height: 25vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  margin-left: -2.8rem;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+/* .content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+} */
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
 }

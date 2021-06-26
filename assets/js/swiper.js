@@ -31,12 +31,12 @@ var mySwiper = new Swiper(".swiper-container", {
     rotate: 0,
     stretch: 0,
     depth: 250,
-    modifier: 0.5,
+    modifier: 3,
     slideShadows: true,
   }, // Distance between slides in px.
   spaceBetween: 80,
   //
-  slidesPerView: 3,
+  slidesPerView: 2.5,
   //
   centeredSlides: true,
   //
