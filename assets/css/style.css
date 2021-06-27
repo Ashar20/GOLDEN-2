@@ -2312,42 +2312,12 @@ p {
   width: 20px;
   border-radius: 10px;
 }
-/* 
-.slider-buttons {
-  position: absolute;
-  display: flex;
-  top: 100%;
-  justify-content: flex-end;
-  width: 100%;
-  padding-top: 8px;
-} */
-
-/* .swiper-button-next,
-.swiper-button-prev {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  position: relative;
-  margin-left: 4px;
+@media screen and (max-width: 768px) {
+  .swiper-process .slider-item-content {
+    padding: 5px;
+    overflow: scroll !important;
+  }
 }
-.swiper-button-next:before,
-.swiper-button-prev:before {
-  content: "";
-  position: absolute;
-  background-color: #fff;
-  height: 1px;
-  width: 0;
-  left: 0;
-  bottom: -1px;
-  transition: 0.2s;
-}
-.swiper-button-next:hover:before,
-.swiper-button-prev:hover:before {
-  width: 100%;
-} */
-
 /*--------------------------------------------------------------
 # Wave
 --------------------------------------------------------------*/
