@@ -1,33 +1,26 @@
 var swiper = new Swiper(".swiper-process", {
-  speed: 400,
-  initialSlide: 1,
-  direction: "horizontal",
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "3",
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  effect: "fade",
+  loop: true,
+  speed: 300,
+  mousewheel: {
+    invert: false,
   },
   loop: true,
+  // delay between transitions in ms
   autoplay: {
     delay: 3000,
+    loop: true,
   },
-
-  breakpoints: {
-    // when window width is >= 767px
-    768: {
-      slidesPerView: 1,
-      initialSlide: 0,
-      speed: 400,
-      autoplay: {
-        delay: 3000,
-      },
-      direction: "horizontal",
-    },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });

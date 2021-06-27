@@ -27,6 +27,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
 
   <!-- Template Main CSS File -->
@@ -125,7 +126,7 @@
     <main id="main">
 
       <!-- ======= About Us Section ======= -->
-      <section id="about" class="about">
+      <section id="about" class="about pb-0">
         <div class="container-fluid">
 
           <div class="section-title" data-aos="fade-up">
@@ -209,60 +210,59 @@
           <h2>Manufacturing Process</h2>
         </div>
         <div class="swiper-process">
-          <div class="swiper-wrapper-process swiper-wrapper">
-            <div class="swiper-slide-process swiper-slide">
-              <div class="swiper-content-process">
-                <div class="hero first">
-
-                </div>
-                <div class="copy">
-                  <h1>First Stage</h1>
-                  <p>The first stage includes sourcing the rich Gujarat and Nippani
-                    tobacco. </p>
-                </div>
+          <div class="swiper-wrapper">
+            <div class="slider-item swiper-slide">
+              <div class="slider-image-wrapper">
+                <img class="slider-image" src="assets/img/Tobacco Plant.jpg" alt="SliderImg">
+              </div>
+              <div class="slider-item-content">
+                <h1>First Stage</h1>
+                <p>The first stage includes sourcing the rich Gujarat and Nippani
+                  tobacco.
+                </p>
               </div>
             </div>
-            <div class="swiper-slide-process swiper-slide">
-              <div class="swiper-content-process">
-                <div class="hero second">
-
-                </div>
-                <div class="copy">
-                  <h1>Second stage</h1>
-                  <p>The Beedi is rolled with Tendu leaves embedding this mixture in the
-                    middle and a small thread is tied at one end.</p>
-                </div>
+            <div class="slider-item swiper-slide">
+              <div class="slider-image-wrapper">
+                <img class="slider-image" src="assets/img/Beedi Rolling.jpg" alt="SliderImg">
+              </div>
+              <div class="slider-item-content">
+                <h1>Second stage</h1>
+                <p>The Beedi is rolled with Tendu leaves embedding this mixture in the
+                  middle and a small thread is tied at one end.</p>
               </div>
             </div>
-            <div class="swiper-slide-process swiper-slide">
-              <div class="swiper-content-process">
-                <div class="hero third">
-
-                </div>
-                <div class="copy">
-                  <h1>Third stage</h1>
-                  <p>The rolled Beedies are arranged in a huge tray and roasted in a wood
-                    husk/fire oven, this eliminates the moisture if any</p>
-                </div>
+            <div class="slider-item swiper-slide">
+              <div class="slider-image-wrapper">
+                <img class="slider-image" src="assets/img/portfolio/Sun Drying Process of Beedi.jpg" alt="SliderImg">
+              </div>
+              <div class="slider-item-content">
+                <h1>Third stage</h1>
+                <p>The rolled Beedies are arranged in a huge tray and roasted in a wood
+                  husk/fire oven, this eliminates the moisture if any</p>
               </div>
             </div>
-            <div class="swiper-slide-process swiper-slide">
-              <div class="swiper-content-process">
-                <div class="hero fourth">
-
-                </div>
-                <div class="copy">
-                  <h1>Fourth stage</h1>
-                  <p>The roasted Beedies are then removed from the oven and then labelled
-                    and packed, with our trademark GT branding, which assures the genuineness of the product and the
-                    Beedis are ready to deliver.</p>
-                </div>
+            <div class="slider-item swiper-slide">
+              <div class="slider-image-wrapper">
+                <img class="slider-image" src="assets/img/Packing Process.jpg" alt="SliderImg">
+              </div>
+              <div class="slider-item-content">
+                <h1>Fourth stage</h1>
+                <p>The roasted Beedies are then removed from the oven and then labelled
+                  and packed, with our trademark GT branding, which assures the genuineness of the product and the
+                  Beedis are ready to deliver.</p>
               </div>
             </div>
           </div>
-          <!-- Add Pagination -->
-        </div>
+          <!-- <div class="slider-buttons">
+            <button class="swiper-button-prev">Prev</button>
+            <button class="swiper-button-next">Next</button>
+          </div> -->
 
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </section>
 
 
@@ -1051,7 +1051,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
 
   <!-- Template Main JS File -->
-  <!-- <script src="assets/js/loader.js"></script> -->
+  <script src="assets/js/loader.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/swiper.js"></script>
