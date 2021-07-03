@@ -7,7 +7,7 @@ var swiper = new Swiper(".swiper-process", {
   mousewheel: {
     invert: false,
   },
-  loop: true,
+  loop: false,
   // delay between transitions in ms
   autoplay: {
     delay: 3000,
@@ -15,8 +15,8 @@ var swiper = new Swiper(".swiper-process", {
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
+    clickable: false,
+    dynamicBullets: false,
   },
   // Navigation arrows
   navigation: {
