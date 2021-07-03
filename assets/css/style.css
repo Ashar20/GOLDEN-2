@@ -8,11 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@font-face {
-  font-family: "Courgette-Regular";
-  src: url("../vendor/font/Courgette-Regular.ttf");
-}
-/* @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap"); */
+ @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap"); */
 body {
   font-family: "Courgette-Regular";
   color: #555555;
@@ -2254,7 +2250,7 @@ p {
   flex-direction: column;
   flex-shrink: 0;
   opacity: 0;
-  background: linear-gradient(270deg, #f7f9ff 0%, #f2f6ff 100%);
+  background: linear-gradient(270deg, #f7f9ff 0%, #f2f9ff 100%);
   cursor: -webkit-grab;
   cursor: grab;
 }
@@ -2300,7 +2296,7 @@ p {
   line-height: 30px;
   font-size: 12px;
   opacity: 1;
-  background: rgba(255, 185, 0, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   display: inline-block;
   margin-right: 8px;
   cursor: pointer;
@@ -2308,7 +2304,7 @@ p {
 }
 
 .swiper-process .swiper-pagination-bullet-active {
-  background: #ffb200;
+  background:#f2f9ff;
   width: 20px;
   border-radius: 10px;
 }
