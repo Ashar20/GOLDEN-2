@@ -20,11 +20,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #0ca4cc;
+  color: #fff;
 }
 
 a:hover {
-  color: #9ed49a;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -1933,8 +1933,8 @@ p {
   line-height: 1.5em;
   white-space: nowrap;
   letter-spacing: 0.03em;
-  color: var(--white-color);
-  background: var(--dark-pink-color);
+  color: var(--white-color) !important;
+  background: var(--dark-violet-color);
   cursor: pointer;
   box-shadow: 0 4px 16px var(--dark-pink-color);
   transition: ease 0.2s;
@@ -1942,7 +1942,7 @@ p {
 
 .btn:hover {
   padding: 8px 34px;
-  box-shadow: 0 5px 24px var(--dark-pink-color);
+  box-shadow: 0 5px 24px var(--dark-violet-color);
 }
 
 .btn:active {

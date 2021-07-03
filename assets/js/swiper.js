@@ -30,13 +30,13 @@ var mySwiper = new Swiper(".swiper-container", {
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
-    depth: 250,
-    modifier: 3,
+    depth: 600,
+    modifier: 0.13,
     slideShadows: true,
   }, // Distance between slides in px.
   spaceBetween: 80,
   //
-  slidesPerView: 2.5,
+  slidesPerView: 3,
   //
   centeredSlides: true,
   //

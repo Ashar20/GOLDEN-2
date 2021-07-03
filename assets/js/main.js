@@ -263,4 +263,19 @@
       once: true,
     });
   });
+
+  $("#view-more-btn").click(function (e) {
+    e.preventDefault();
+    var view_more = document.getElementById("view-more");
+    var view_less = document.getElementById("view-less");
+    view_more.classList.remove("d-none");
+    view_less.classList.add("d-none");
+  });
+  $("#view-less-btn").click(function (e) {
+    e.preventDefault();
+    var view_more = document.getElementById("view-more");
+    var view_less = document.getElementById("view-less");
+    view_less.classList.remove("d-none");
+    view_more.classList.add("d-none");
+  });
 })();
